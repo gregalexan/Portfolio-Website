@@ -7,16 +7,119 @@
 <meta http-equiv=“Pragma” content=”no-cache”>
 <meta http-equiv=“Expires” content=”-1″>
 <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
-<!-- CSS Stylesheets -->
-<link rel="stylesheet" href="css/master.css">
 
 <title>Portfolio Project</title>
 </head>
 
 <body>
 
-   <h1>Portfolio Project</h1>
-
+    <div class="container">
+        <h1>My Portfolio Website</h1>
+        <p>Gregory G. Alexandrou, potentially perfect.</p>
+        <div class="text1">
+            <p>Student in Athens University of Economics and Business.</p>
+        </div>
+        <div class="text2">
+            <p>Excited about Software Development, Big Data and Management.</p>
+        </div>
+        <div class="text3">
+            <p>Ready to take on more projects!</p>
+        </div>
+        <h2>*********</h2>
+    </div>
+    <div class="Projects">
+        <h2>Coding Projects I Have Completed</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col bm-2">
+                <div class="card h-100">
+                    <img src="images/WeatherForecast.png" class="card-img-top" alt="Weather-Forecast">
+                    <div class="card-body">
+                        <h3 class="card-title">Weather Forecast</h3>
+                        <p class="card-text">Coursera project: Weather Forecast written in HTML, CSS, JavaScript</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col bm-2">
+                <div class="card h-100">
+                    <img src="images/NullTeamProject.png" class="card-img-top" alt="Monitoring a Docker Cluster">
+                    <div class="card-body">
+                        <h4 class="card-title">Monitoring a Docker Cluster</h4>
+                        <p class="card-text">3rd Semester project. Modular App that monitors a Docker Cluster. Written in Java</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col bm-2">
+                <div class="card h-100">
+                    <img src="images/PortfolioWebsite.png" class="card-img-top" alt="Portfolio Website">
+                    <div class="card-body">
+                        <h5 class="card-title">This one! Portfolio Website</h5>
+                        <p class="card-text">Coursera Exercise: Written in HTML, CSS, JavaScript</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>*********</h1>
+    </div>
+    <div class="skills">
+        <h1>Skill Summary</h1>
+        <p data-toggle="tooltip" data-placement="bottom" title="One of my Skills">
+            <span class="keyword-magnet">HTML</span>
+            <span class="keyword-magnet">CSS</span>
+            <span class="keyword-magnet">JavaScript</span>
+            <span class="keyword-magnet">Java</span>
+            <span class="keyword-magnet">Excel - Solver</span>
+            <span class="keyword-magnet">Docker</span>
+            <span class="keyword-magnet">Accounting</span>
+        </p>
+        <ul>
+            <li>Coursera Certificate in JavaScript by Meta</li>
+            <li>Business Person</li>
+            <li>Misunderstood Genius</li>
+        </ul>
+        <h2>*********</h2>
+    </div>
+    <div class="actuallyMe">
+        <h1>Movie Enthusiast</h1>
+        <h2>Actually Me Characters</h2>
+        <p data-toggle="tooltip" data-placement="bottom" title="Actually Me Characters">
+            <span class="keyword-magnet">Batman</span>
+            <span class="keyword-magnet">Ryan Gosling</span>
+            <span class="keyword-magnet">Homelander</span>
+            <span class="keyword-magnet">Tyler Durden</span>
+            <span class="keyword-magnet">Patrick Bateman</span>
+            <span class="keyword-magnet">Gustavo Fring</span>
+        </p>
+        <h3>*********</h3>
+    </div>
+    <div class="contact">
+        <h1>Contact</h1>
+        <p>Personal Email: <a href="mailto:alexandgreg23@gmail.com" data-toggle="tooltip" data-placement="bottom" title="Contact Me" onclick="javascript:toolTipReset()" data-original-title="Tap here to email me">alexandgreg23@gmail.com</a></p>
+        <p>Business / School Email: <a href="mailto:t8220004@aueb.gr" data-toggle="tooltip" data-placement="bottom" title="Contact Me" onclick="javascript:toolTipReset()" data-original-title="Tap here to email me">t8220004@aueb.gr</a></p>
+        <p>Github: <a href="https://github.com/gregalexan" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Contact Me" onclick="javascript:toolTipReset()" data-original-title="Tap here to visit my Github Profile">gregalexan</a></p>
+        <p>Github: <a href="https://www.instagram.com/g.alexandrou_" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Contact Me" onclick="javascript:toolTipReset()" data-original-title="Tap here to visit my Instagram Profile">g.alexandrou_</a></p>
+        <h2>*********</h2>
+    </div>
+    <div class="movies">
+        <h1>Take a Break and Play a Game!</h1>
+        <form id="query-form" onsubmit="return information(event)">
+            <div>
+                <label for="movie">Enter the name of a movie:</label>
+                <input class="textfield" id="movie" type="text" name="movie" placeholder="e.g. The Godfather">
+            </div>
+            <div class="button">
+                <div class="title" id="title"></div>
+                <div class="body" id="body"></div>
+                <input class="btn btn-warning" type="button" value="Reset" id="ResetButton" onclick="resetForm()">
+                <input class="btn btn-primary" type="submit" value="Information" id="makeButton">
+                <div class="message" id="message"></div>
+            </div>
+        </form>
+        <p data-toggle="tooltip" data-placement="bottom" title="Information" onclick="javascript:information()" data-original-title="">
+            Powered by :
+            <span class="keyword-magnet">JavaScript</span>
+        </p>
+        <div id="movieInfo"></div>
+    </div>
 </body>
 
 <footer>
@@ -24,4 +127,10 @@
 </footer>
 
 <!-- Our codes -->
+<script>
+    information();
+</script>
 <script src="js/main.js"></script>
+<link rel="stylesheet" href="css/master.css">
+
+</html>
