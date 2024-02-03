@@ -11,8 +11,8 @@ function information(event) {
     searchInTheWeb(movieTitle); // searches in the web
 }
 async function searchInTheWeb(movieTitle) {
-    var apiKey = "YOUR GOOGLE API KEY"; // REPLACE WITH YOUR API KEY.
-    var cx = "YOUR CX"; // REPLACE WITH YOUR API KEY.
+    var apiKey = secrets.Api_Key; // REPLACE WITH YOUR API KEY.
+    var cx = secrets.CX; // REPLACE WITH YOUR API KEY.
     var url = `https://www.googleapis.com/customsearch/v1?q=${encodeURIComponent(movieTitle)}&key=${apiKey}&cx=${cx}`;
     try {
         /*Fetching the Response from Google search.*/
