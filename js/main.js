@@ -1,5 +1,5 @@
-var apiKey = 'REPLACE_WITH_GOOGLE_API_KEY';
-var cx = 'REPLACE_WITH_CX_ID';
+const apiKey = 'REPLACE_WITH_GOOGLE_API_KEY';
+const cx = 'REPLACE_WITH_CX_ID';
 function toolTipReset() {
     var tooltips = document.querySelectorAll('.tooltiptext');
     tooltips.forEach(function(tooltip) {
