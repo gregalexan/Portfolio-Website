@@ -1,5 +1,3 @@
-var apiKey = 'REPLACE_WITH_GOOGLE_API_KEY';
-var cx = 'REPLACE_WITH_CX_ID';
 function toolTipReset() {
     var tooltips = document.querySelectorAll('.tooltiptext');
     tooltips.forEach(function(tooltip) {
@@ -13,6 +11,8 @@ function information(event) {
     searchInTheWeb(movieTitle); // searches in the web
 }
 async function searchInTheWeb(movieTitle) {
+    var apiKey = secrets.API_KEY; // REPLACE WITH YOUR API KEY.
+    var cx = secrets.CX; // REPLACE WITH YOUR API KEY.
     var url = `https://www.googleapis.com/customsearch/v1?q=${encodeURIComponent(movieTitle)}&key=${apiKey}&cx=${cx}`;
     try {
         /*Fetching the Response from Google search.*/
