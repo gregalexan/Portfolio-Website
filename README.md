@@ -2,7 +2,7 @@
 ## Excercise from Coursera: Build a Portfolio Website with HTML, CSS, and JavaScript
 * Using Google API key and CX.
 * Contains a mini game in the END of the Page.
-* Take a quick look [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D)
+* Take a quick look [here](https://gregalexan.github.io/Portfolio-Website/)
 * In order for the Mini Game to work you have to use your own
 Google API KEY and CX ID
 * See one [photo of the Mini Game](#mini-game-photo) or Follow these steps
